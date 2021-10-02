@@ -1,0 +1,232 @@
+.flexBox, .navbar, .navbar > ul, main > section, main > section > form, .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li > a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: arial, sans-serif;
+  height: 100%;
+  font-size: 14px;
+}
+
+.navbar {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 60px;
+}
+
+.navbar > ul {
+  -webkit-padding-end: 32px;
+          padding-inline-end: 32px;
+}
+
+.navbar > ul > li > svg {
+  width: 40px;
+  height: 40px;
+  fill: #5f6368;
+  -webkit-margin-start: 15px;
+          margin-inline-start: 15px;
+  vertical-align: middle;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.navbar > ul > li > svg:hover {
+  background-color: rgba(60, 64, 67, 0.08);
+  border-radius: 50%;
+}
+
+.navbar > ul > li > a {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 13px;
+  padding-left: 15px;
+}
+
+.navbar > ul > li:last-of-type > a {
+  background: #1a73e8;
+  border: 1px solid transparent;
+  margin-left: 8px;
+  color: white;
+  min-width: 96px;
+  padding: 9px 23px;
+  text-align: center;
+  font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.25px;
+  border-radius: 4px;
+  margin-right: 8px;
+  -webkit-transition: -webkit-box-shadow 250ms;
+  transition: -webkit-box-shadow 250ms;
+  transition: box-shadow 250ms;
+  transition: box-shadow 250ms, -webkit-box-shadow 250ms;
+}
+
+main > section {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main > section > div:first-of-type > img {
+  width: 272px;
+  height: 92px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main > section > form {
+  border-color: rgba(223, 225, 229, 0);
+  width: 584px;
+  height: 46px;
+  border-radius: 24px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  border: 1px solid #dfe1e5;
+}
+
+main > section > form > svg {
+  width: 24px;
+  height: 24px;
+  -webkit-margin-end: 13px;
+          margin-inline-end: 13px;
+}
+
+main > section > form > svg:first-of-type {
+  width: 20px;
+  height: 20px;
+  fill: #9aa0a6;
+  -webkit-margin-start: 13px;
+          margin-inline-start: 13px;
+}
+
+main > section > form > input {
+  border: none;
+  width: 487px;
+}
+
+.btn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70px;
+  -webkit-transition: -webkit-box-shadow 250ms;
+  transition: -webkit-box-shadow 250ms;
+  transition: box-shadow 250ms;
+  transition: box-shadow 250ms, -webkit-box-shadow 250ms;
+}
+
+.btn > input {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.btn > input:hover {
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+}
+
+.language {
+  margin-bottom: 24px;
+  height: 247px;
+}
+
+.language > h6 {
+  color: #3c4043;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.language > h6 > a {
+  padding: 0 3px;
+  text-decoration: none;
+}
+
+.language > h6 > a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #f2f2f2;
+}
+
+footer > div:first-of-type {
+  padding: 15px 30px;
+  border-bottom: 1px solid #dadce0;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+footer > section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+}
+
+footer > section > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer > section > div > a {
+  color: #70757a;
+  padding: 15px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+footer > section > div > a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */
