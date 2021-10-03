@@ -1,3 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: arial, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 14px;
+}
+
 .flexBox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7,8 +21,9 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 ul li {
@@ -21,5 +36,15 @@ ul li > a {
 
 input {
   outline: none;
+}
+
+.button {
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: -webkit-box-shadow 250ms;
+  transition: -webkit-box-shadow 250ms;
+  transition: box-shadow 250ms;
+  transition: box-shadow 250ms, -webkit-box-shadow 250ms;
 }
 /*# sourceMappingURL=main.css.map */
